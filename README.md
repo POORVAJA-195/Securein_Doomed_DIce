@@ -75,13 +75,43 @@ The dice are rolled simultaneously and have to find the total combinations possi
     New array is empty as of now.
 *  The possibility to get the sum 2 is [1,1].Thus 1 has to be in newarray1 and newarray2.
 
-   New array1 = {1}
-   New array2 = {2}
+   * New array1 = {1}
+   * New array2 = {1}
 
 *  The possibility to get the sum 12 is [4,8] as the new array1 values cannot exceed 4.
 
-  New array1 = {1,4}
-  New array2 = {2,8}
+   * New array1 = {1,4}
+   * New array2 = {1,8}
+
+*  Cannot add 1 and 4 to the array1 as the frequency of 2 and 12 becomes 2 which is actually 1 in older array and this leads to change in the probability values. Thus 1 and 4 are fixed in new array1.
+*  Only possibilities are 2 and 3 to fill up the new array1 in the remaining 4 places.
+*  Poosible combinations are
+    2 2 2 2 --> Exceeds the frequency sum of 10 from 3 to 4.
+   
+    3 3 3 3 --> Exceeds the frequency sum of 11 from 2 to 4.
+   
+    2 2 2 3 / 3 2 2 2 --> Exceeds the frequency sum of 3 from 2 to 3.
+   
+    **2 2 3 3 / 3 3 2 2 --> Correct Combination **
+   
+    2 3 3 3 / 3 3 3 2 --> Exceeds the frequency sum of 11 from 2 to 3.
+
+   * New array1 = {1,4,2,2,3,3}
+   
+   * New array2 = {1,8}
+
+*  Only the numbers lesser than 8 can be filled in the array2 as the values grater than 8 exceed the sum value to 13,14 and so on.
+*  Thus, possible values for new array2 are {7,6,5,4,3,2}. Have to pick 4 values from this set.
+*  7 is not possible since it exceed the frequency sum of 10 from 3 to 4.
+*  Thus, only possible values from the set {6,5,4,3,2} are {6,5,4,3}.
+
+   **New array1 = {1,4,2,2,3,3}**
+   
+   **New array2 = {1,8,6,5,4,3}**
+
+   
+    
+    
   
 
 
