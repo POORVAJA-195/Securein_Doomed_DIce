@@ -35,7 +35,24 @@ The dice are rolled simultaneously and have to find the total combinations possi
 
    ![image](https://github.com/POORVAJA-195/Securein_Doomed_DIce/assets/104772332/2b2f7bef-aef3-470f-8445-f76ab5e11bf8)
 
-3. 
+### **3. RPOBABILITY OF ALL POSSIBLE SUMS:**
+
+* The summ of all possible combinations are calculated first and printed in the matrix format.
+
+* The different values of sum in the matrix are counted and the probability is defined for each sum values. 
+
+![image](https://github.com/POORVAJA-195/Securein_Doomed_DIce/assets/104772332/3ff2b4e5-16ed-4fe1-a660-690cd34ad9da)
+
+* The number of favourable outcome is the number of occurance of each sum value in the sum matrix.
+* Total number of favourable outcome is 36 this case.
+
+#### **OUTPUT SCREENSHOT OF SUM MATRIX AND PROBABILITIES OF SUM:**
+
+  ![image](https://github.com/POORVAJA-195/Securein_Doomed_DIce/assets/104772332/13a01b6a-347f-4882-b448-7d120bf6a38a)
+
+
+  
+
 
 
    
