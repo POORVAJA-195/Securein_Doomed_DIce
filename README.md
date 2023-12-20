@@ -7,7 +7,7 @@ The dice are rolled simultaneously and have to find the total combinations possi
 
 ### **1.** **TOTAL POSSIBLE COMBINATIONS:**
    
-   * The formula for finding the total possible combinations is the No. of faces of the object power No. of objects.
+   * The formula for finding the total possible combinations is the (No. of faces of the object) power (No. of objects).
 
    * In this case, the object given is Dice.
 
@@ -23,9 +23,9 @@ The dice are rolled simultaneously and have to find the total combinations possi
 
 ### **2.** **DISTRIBUTION OF ALL POSSIBLE COMBINAITONS:**
 
-   * To print the distribution of all possible combinations, 2 for loops are executed.
+   * To print the distribution of all possible combinations, 2 for-loops are executed.
 
-   * The first for loop iterates through the first dice values and second for loop iterates through the second dice values.
+   * The first for-loop iterates through the first dice values and second for-loop iterates through the second dice values.
 
    * The combinations are printed in the format of 6x6 matrix.
 
@@ -35,7 +35,7 @@ The dice are rolled simultaneously and have to find the total combinations possi
 
    ![image](https://github.com/POORVAJA-195/Securein_Doomed_DIce/assets/104772332/2b2f7bef-aef3-470f-8445-f76ab5e11bf8)
 
-### **3. RPOBABILITY OF ALL POSSIBLE SUMS:**
+### **3. PROBABILITY OF ALL POSSIBLE SUMS:**
 
 * The summ of all possible combinations are calculated first and printed in the matrix format.
 
@@ -57,18 +57,20 @@ The dice are rolled simultaneously and have to find the total combinations possi
 * All the spots from two dice all removed. Have to replace the spots based on the following conditions.
   
   * Die A cannot have more than 4 spots on each face.
-  * DIe A can have repeated face values.
-  * DIe B can have any values even grater than 6.
-  * The probability of sum for all the unique values in the sum matrix have to be same for both older and new array.
+  * Die A can have repeated face values.
+  * Die B can have any values even grater than 6.
+  * The probability of sum for all the unique values in the sum matrix have to be same for both old and new array.
 
 **PROGRAM LOGIC:**
-* The sum ranges from 2 to 12 as the smallest element in the older array1 and newarray1 is 1. Adding both gices the smmalest sum value of 2. Adding the largest value in older array1 and newarray1 which is 6 in each case gives the value of 12.
+* The sum ranges from 2 to 12 as the smallest element in the older array1 and newarray1 is 1. Adding both values gives smallest sum value as 2. Adding the largest value in older array1 and newarray1 which is 6 in each case gives the value of 12.
   
   **Old array before removing the spots:**
+  
   * Old Array1 = {1,2,3,4,5,6}
   * Old Array2 = {1,2,3,4,5,6}
     
    **New array after removing the spots:**
+  
   * New array1 = {}
   * New array2 = {}
 
@@ -86,13 +88,14 @@ The dice are rolled simultaneously and have to find the total combinations possi
 *  Cannot add 1 and 4 to the array1 as the frequency of 2 and 12 becomes 2 which is actually 1 in older array and this leads to change in the probability values. Thus 1 and 4 are fixed in new array1.
 *  Only possibilities are 2 and 3 to fill up the new array1 in the remaining 4 places.
 *  Poosible combinations are
+  
     2 2 2 2 --> Exceeds the frequency sum of 10 from 3 to 4.
    
     3 3 3 3 --> Exceeds the frequency sum of 11 from 2 to 4.
    
     2 2 2 3 / 3 2 2 2 --> Exceeds the frequency sum of 3 from 2 to 3.
    
-    **2 2 3 3 / 3 3 2 2 --> Correct Combination **
+    **2 2 3 3 / 3 3 2 2 --> Correct Combination**
    
     2 3 3 3 / 3 3 3 2 --> Exceeds the frequency sum of 11 from 2 to 3.
 
@@ -100,9 +103,9 @@ The dice are rolled simultaneously and have to find the total combinations possi
    
    * New array2 = {1,8}
 
-*  Only the numbers lesser than 8 can be filled in the array2 as the values grater than 8 exceed the sum value to 13,14 and so on.
+*  Only the numbers lesser than 8 can be filled in the array2 as the values grater than 8 exceed the sum value to 13,14... and so on.
 *  Thus, possible values for new array2 are {7,6,5,4,3,2}. Have to pick 4 values from this set.
-*  7 is not possible since it exceed the frequency sum of 10 from 3 to 4.
+*  7 is not possible since it exceeds the frequency sum of 10 from 3 to 4.
 *  Thus, only possible values from the set {6,5,4,3,2} are {6,5,4,3}.
 
    **New array1 = {1,4,2,2,3,3}**
