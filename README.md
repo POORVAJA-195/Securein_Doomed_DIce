@@ -50,7 +50,38 @@ The dice are rolled simultaneously and have to find the total combinations possi
 
   ![image](https://github.com/POORVAJA-195/Securein_Doomed_DIce/assets/104772332/13a01b6a-347f-4882-b448-7d120bf6a38a)
 
+## **PART-B**
 
+**UNDERSTANDING THE PROBLEM STATEMENT:**
+
+* All the spots from two dice all removed. Have to replace the spots based on the following conditions.
+  
+  * Die A cannot have more than 4 spots on each face.
+  * DIe A can have repeated face values.
+  * DIe B can have any values even grater than 6.
+  * The probability of sum for all the unique values in the sum matrix have to be same for both older and new array.
+
+**PROGRAM LOGIC:**
+* The sum ranges from 2 to 12 as the smallest element in the older array1 and newarray1 is 1. Adding both gices the smmalest sum value of 2. Adding the largest value in older array1 and newarray1 which is 6 in each case gives the value of 12.
+  
+  **Old array before removing the spots:**
+  * Old Array1 = {1,2,3,4,5,6}
+  * Old Array2 = {1,2,3,4,5,6}
+    
+   **New array after removing the spots:**
+  * New array1 = {}
+  * New array2 = {}
+
+    New array is empty as of now.
+*  The possibility to get the sum 2 is [1,1].Thus 1 has to be in newarray1 and newarray2.
+
+   New array1 = {1}
+   New array2 = {2}
+
+*  The possibility to get the sum 12 is [4,8] as the new array1 values cannot exceed 4.
+
+  New array1 = {1,4}
+  New array2 = {2,8}
   
 
 
