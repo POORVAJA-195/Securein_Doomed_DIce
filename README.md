@@ -112,6 +112,11 @@ The dice are rolled simultaneously and have to find the total combinations possi
    
    **New array2 = {1,8,6,5,4,3}**
 
+   #### **OUTPUT SCREENSHOT:**
+
+   ![image](https://github.com/POORVAJA-195/Securein_Doomed_DIce/assets/104772332/f0678448-b837-4fb6-8bc3-4bdb25cd7bf1)
+
+
    
     
     
