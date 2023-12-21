@@ -37,7 +37,7 @@ The dice are rolled simultaneously and have to find the total combinations possi
 
 ### **3. PROBABILITY OF ALL POSSIBLE SUMS:**
 
-* The summ of all possible combinations are calculated first and printed in the matrix format.
+* The sum of all possible combinations are calculated first and printed in the matrix format.
 
 * The different values of sum in the matrix are counted and the probability is defined for each sum values. 
 
